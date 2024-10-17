@@ -24,8 +24,20 @@
 ##============================================================================================##
 ?>
 <?php
-function luasPersegi($panjang, $lebar){
- $luas = $panjang * $lebar;
-return $luas;
-};
-echo luasPersegi(4,5);
+// function luasPp ($panjang, $lebar){            
+//     $luas = $panjang * $lebar;                         
+//     return $luas;                                   
+// }                                                  
+// echo luasPp(4,6);
+
+#================================================================================================#
+#                              UNTUK MEMASUKAN INPUT YANG BERAGAM                                #
+#================================================================================================#
+function penjumlahan(...$input){
+    $result = 0;
+    foreach ($input as $value) {
+        $result = $result + $value;
+    }
+    return $result;
+}
+echo penjumlahan(3,43,324,324);
