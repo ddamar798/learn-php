@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login {
+            align-items: center;
+            border-radius: 10px;
+            border-bottom: 15px;
+            width: 195px;
+            height: 145px;
+            background-color: aqua;
+        }
+        /* .inp{
+            background-color: transparent;
+        } */
+    </style>
+</head>
+<body>
+    <div class="login">
+    <form action="session.php" method="POST">
+        <input type="email" name="user" placeholder="enter email" required 
+        style="background-color: transparent; border-color: transparent; text-decoration: underline; "/> 
+        <br style="margin: 5px;">
+        <input type="password" name="pw" placeholder="enter password" required
+        style="background-color: transparent; border-color: transparent; text-decoration: underline;"/> 
+        <br style="margin: 5px;">
+        <input type="submit" 
+        style="background-color: red; border-color: transparent;"/>
+    </form>
+    </div>
+</body>
+</html>
