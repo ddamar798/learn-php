@@ -4,7 +4,7 @@
 
 if(isset($_GET["nama"])){
     $nama = $_GET["nama"];
-    echo "namanya adalah " . $nama;
+    echo "Hallo " . $nama;
 }
 
  ?>
