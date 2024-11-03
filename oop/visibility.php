@@ -3,8 +3,9 @@
 class produk{
     public $judul,
            $penulis,
-           $penerbit,
-           $harga;
+           $penerbit;
+ protected $diskon;
+ private $harga;
 
            public function __construct($judul = "", $penulis = "", 
            $penerbit = "", $harga = "") {
@@ -13,6 +14,14 @@ class produk{
             $this->penulis = $penulis;
             $this->penerbit = $penerbit;
             $this->harga = $harga;
+           }
+
+           public function setDiskon( $diskon ) {
+            $this->diskon = $diskon;
+           }
+
+           public function getHarga(){
+            return $this->harga - ($this->harga * $this->diskon / 100);
            }
 
            public function getKonten(){
@@ -52,6 +61,10 @@ class game extends produk{
     }
 }
 
-$produk1 = new game("PUBG", "Tencent", "Tencent", "0", "20");
+$produk1 = new game("PUBG", "Tencent", "Tencent", "10000", "20",);
 
-echo $produk1->getInfoproduk();
+echo $produk1->getInfoProduk();
+echo "<hr/>";
+
+$produk1->setDiskon(50);
+echo $produk1->getHarga();
