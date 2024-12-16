@@ -6,7 +6,7 @@
 //     "Damar",
 //     "Rio",
 //     "Doni",
-//     "Riko",
+//     "Roni",
 // ];  
 
 // echo $nama[0];      < = = Untuk Memangil Salah Satu data Array //
