@@ -2,7 +2,7 @@
 //  $nama = $_GET["nama"];
 //  echo "Hallo " . $nama;
 
-if(isset($_GET["nama"])){
+if(isset($_GET["name"])){
     $nama = $_GET["nama"];
     echo "namanya adalah " . $nama;
 }
@@ -10,6 +10,6 @@ if(isset($_GET["nama"])){
  ?>
 
  <form action="get.php" method="GET">
-    <input type="text" name="nama">
+    <input type="text" name="name">
     <input type="submit" value="kirim">
  </form>
